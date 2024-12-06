@@ -1,3 +1,7 @@
+body {
+  font-family: Poppins, sans-serif;
+}
+
 .insurance-types-container {
   max-width: 450px;
   margin: 0 auto;
@@ -141,6 +145,7 @@ label {
   font-weight: 600;
   margin: 10px 0 5px;
   padding-top: 3px;
+  font-family: Poppins, sans-serif;
 }
 
 #zip_code {
@@ -192,6 +197,13 @@ input {
   width: 100%;
 }
 
+/*
+     .custom-contents {
+        margin: 0 auto;
+        min-height: 500px;
+      }
+*/
+
 .custom-contents {
   margin: 0 auto;
   min-height: 500px;
@@ -226,6 +238,33 @@ input {
 
 .hide {
   display: none !important;
+}
+
+/*
+Birthday
+*/
+
+.continue_btn {
+  align-content: center;
+  align-items: center;
+  -moz-appearance: none;
+  appearance: none;
+  background: #08c177;
+  border: none;
+  border-radius: 7px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 0.65;
+  margin-bottom: 0;
+  margin-right: 20px;
+  margin-top: 20px;
+  padding: 13px 24px;
+  text-transform: uppercase;
+  transition: 0.15s;
 }
 
 /* UN USED 
