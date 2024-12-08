@@ -1,3 +1,10 @@
+h1 {
+  color: #333;
+  margin-bottom: 30px;
+  text-align: left;
+  font-family: Poppins, sans-serif;
+}
+
 body {
   font-family: Poppins, sans-serif;
 }
@@ -197,13 +204,6 @@ input {
   width: 100%;
 }
 
-/*
-     .custom-contents {
-        margin: 0 auto;
-        min-height: 500px;
-      }
-*/
-
 .custom-contents {
   margin: 0 auto;
   min-height: 500px;
@@ -244,6 +244,29 @@ input {
 Birthday
 */
 
+.continue-btn:hover {
+  background-color: #218838;
+}
+
+.continue-btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.continue-btn {
+  margin-top: 20px;
+  padding: 12px 30px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin-left: 0;
+}
+
 .continue_btn {
   align-content: center;
   align-items: center;
@@ -265,6 +288,77 @@ Birthday
   padding: 13px 24px;
   text-transform: uppercase;
   transition: 0.15s;
+}
+
+.household-count-contents {
+  margin: 0 auto;
+  min-height: 500px;
+  min-width: 500px;
+}
+
+.household-count-contents input[type="radio" i] {
+  background-color: initial;
+  cursor: default;
+  appearance: auto;
+  box-sizing: border-box;
+  margin: 3px 3px 0px 5px;
+  padding: initial;
+  border: initial;
+}
+
+.household-count-contents .button-group {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  grid-template-rows: repeat(2, auto);
+  gap: 10px;
+  justify-content: start;
+  margin-bottom: 25px;
+}
+
+.household-count-contents .number-btn {
+  width: 200px;
+  height: 50px;
+  border: 2px solid #13bc59;
+  background-color: white;
+  color: #0ac561;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.household-count-contents .number-btn:hover {
+  background-color: #e7f1ff;
+}
+
+.number-btn.selected {
+  background-color: #28a745;
+  color: white;
+}
+
+.household-count-contents .continue-btn {
+  margin-top: 20px;
+  padding: 12px 30px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin-left: 0;
+}
+
+.household-count-contents .continue-btn:hover {
+  background-color: #218838;
+}
+
+.household-count-contents .continue-btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
 }
 
 /* UN USED 
