@@ -285,7 +285,7 @@ input[type="email"] {
 
 .button-group-2columns {
   display: grid;
-  grid-template-columns: repeat(2, 200px);
+  grid-template-columns: repeat(2, 300px);
   grid-template-rows: repeat(4, auto);
   gap: 10px;
   justify-content: start;
