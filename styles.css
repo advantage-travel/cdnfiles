@@ -234,30 +234,6 @@ input[type="email"] {
   margin-left: 0;
 }
 
-/* 
-.continue_btn {
-  align-content: center;
-  align-items: center;
-  -moz-appearance: none;
-  appearance: none;
-  background: #08c177;
-  border: none;
-  border-radius: 7px;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  display: flex;
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 0.65;
-  margin-bottom: 0;
-  margin-right: 20px;
-  margin-top: 20px;
-  padding: 13px 24px;
-  text-transform: uppercase;
-  transition: 0.15s;
-} */
-
 .household-count-contents {
   margin: 0 auto;
   min-height: 500px;
@@ -293,7 +269,7 @@ input[type="email"] {
 }
 
 .option-btn {
-  width: 250px;
+  width: 200px;
   height: 50px;
   border: 2px solid #13bc59;
   background-color: white;
