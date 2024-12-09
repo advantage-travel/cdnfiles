@@ -1,12 +1,41 @@
+body {
+  font-family: Poppins, sans-serif;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+}
+
+.full-width {
+  flex: 1 1 100%;
+  padding: 10px;
+}
+
+.half-width {
+  flex: 1 1 50%;
+  padding: 10px;
+  align-items: normal;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
 h1 {
   color: #333;
   margin-bottom: 30px;
   text-align: left;
   font-family: Poppins, sans-serif;
-}
-
-body {
-  font-family: Poppins, sans-serif;
+  font-size: 24px;
 }
 
 .insurance-types-container {
@@ -18,26 +47,8 @@ body {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-.insurance-types-container h1 {
-  color: #333;
-  text-align: center;
-  margin-bottom: 30px;
-  font-family: sans-serif;
-  font-size: 24px;
-}
-
 .radio-option:hover {
   background-color: #f8f8f8;
-}
-
-input[type="radio" i] {
-  background-color: initial;
-  cursor: default;
-  appearance: auto;
-  box-sizing: border-box;
-  margin: 3px 3px 0px 5px;
-  padding: initial;
-  border: initial;
 }
 
 .insurance-type-radio {
@@ -116,9 +127,7 @@ input[type="radio" i] {
   left: 15px;
 }
 
-/*ZIP CODE STYLES START*/
-
-.input--text[type="button"],
+button,
 input[type="button"],
 input[type="submit"] {
   -webkit-appearance: none;
@@ -131,12 +140,13 @@ input[type="submit"] {
   font-size: 1rem;
   font-weight: 700;
   margin-bottom: 0;
-  padding: 24px 16px;
+  padding: 24px;
   text-transform: uppercase;
   transition: 0.15s;
+  cursor: pointer;
 }
 
-.input--text[type="button"]:hover,
+button:hover,
 input[type="submit"]:hover,
 input[type="button"]:hover {
   background: #218838;
@@ -155,23 +165,9 @@ label {
   font-family: Poppins, sans-serif;
 }
 
-#zip_code {
-  float: left;
-  margin-top: 14px;
-  padding: 24px;
-}
-
-input[type="text"] {
-  padding: 12px;
-  border: 2px solid #ddd;
-  border-radius: 4px;
-  font-size: 16px;
-  box-sizing: border-box;
-  transition: border-color 0.3s ease;
-}
-
-.input--text,
-input {
+input[type="text"],
+input[type="date"],
+input[type="email"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -180,28 +176,13 @@ input {
   border-radius: 3px;
   box-sizing: border-box;
   display: block;
-  font-size: 1.25rem;
+  font-size: 20px;
   font-weight: 700;
   line-height: 1;
-  margin-top: 10px;
   padding: 24px 16px;
   width: 100%;
-}
-
-.full-width {
-  flex: 1 1 100%;
-  padding: 10px;
-}
-
-.half-width {
-  flex: 1 1 50%;
-  padding: 10px;
-  align-items: normal;
-}
-
-.row {
-  display: flex;
-  width: 100%;
+  float: left;
+  padding: 24px;
 }
 
 .custom-contents {
@@ -213,16 +194,6 @@ input {
 .container {
   display: flex;
   flex-wrap: wrap;
-}
-
-.input--text,
-input {
-  clear: both;
-  font-size: 20px;
-  margin-bottom: 20px;
-  padding: 20px;
-  text-align: left;
-  width: 300px;
 }
 
 .error {
@@ -239,10 +210,6 @@ input {
 .hide {
   display: none !important;
 }
-
-/*
-Birthday
-*/
 
 .continue-btn:hover {
   background-color: #218838;
@@ -306,7 +273,7 @@ Birthday
   border: initial;
 }
 
-.household-count-contents .button-group {
+.button-group {
   display: grid;
   grid-template-columns: repeat(4, 200px);
   grid-template-rows: repeat(2, auto);
@@ -315,7 +282,16 @@ Birthday
   margin-bottom: 25px;
 }
 
-.household-count-contents .number-btn {
+.button-group-2columns {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  grid-template-rows: repeat(4, auto);
+  gap: 10px;
+  justify-content: start;
+  margin-bottom: 25px;
+}
+
+.option-btn {
   width: 200px;
   height: 50px;
   border: 2px solid #13bc59;
@@ -329,11 +305,11 @@ Birthday
   justify-content: center;
 }
 
-.household-count-contents .number-btn:hover {
+.household-count-contents .option-btn:hover {
   background-color: #e7f1ff;
 }
 
-.number-btn.selected {
+.option-btn.selected {
   background-color: #28a745;
   color: white;
 }
@@ -360,245 +336,3 @@ Birthday
   background-color: #cccccc;
   cursor: not-allowed;
 }
-
-/* UN USED 
-
-      input[type="text"]:focus {
-        outline: none;
-        border-color: #007bff;
-      }
-
-      button {
-        padding: 12px;
-        background-color: #007bff;
-        color: white;
-        border: none;
-        border-radius: 4px;
-        font-size: 16px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-      }
-
-      button:hover {
-        background-color: #218838;
-      }
-
-    
-   
-      @media (min-width: 799px) {
-        .wrapper {
-          background-color: inherit;
-          padding: 0;
-        }
-      }
-
-      @media (min-width: 799px) {
-        .zipcode .innerWrapper {
-          display: inline-block;
-        }
-      }
-
-      .zipcode .innerWrapper {
-        display: flex;
-        flex-direction: column;
-      }
-
-      @media (min-width: 799px) {
-        .innerWrapper {
-          background: inherit;
-          border: 0;
-          border-radius: 0;
-          max-width: 100%;
-          padding: 0;
-        }
-      }
-
-      .innerWrapper {
-        background-color: #fff;
-        border: 1px solid #fff;
-        border-radius: 3px;
-        display: inline-block;
-        margin: 0 auto;
-        max-width: 480px;
-        padding: 25px 15px;
-        text-align: left;
-        width: 100%;
-      }
-
-      @media (min-width: 799px) {
-        .finalStep {
-          font-size: 40px;
-          font-weight: 400;
-          margin-bottom: 20px;
-          padding: 0;
-        }
-      }
-
-      .finalStep {
-        color: #2a2a2a;
-        display: block;
-        font-size: 1.5rem;
-        font-weight: 700;
-        margin-bottom: 28px;
-        padding: 8px 8px 8px 0;
-        text-transform: capitalize;
-        width: 100%;
-      }
-
-      @media (min-width: 799px) {
-        h3 {
-          display: block;
-          margin-left: 5px;
-        }
-      }
-
-      .innerWrapper {
-        background-color: #fff;
-        border: 1px solid #fff;
-        border-radius: 3px;
-        display: inline-block;
-        margin: 0 auto;
-        max-width: 480px;
-        padding: 25px 15px;
-        text-align: left;
-        width: 100%;
-      }
-
-      label {
-        float: none;
-        font-weight: 700;
-      }
-
-      @media (min-width: 799px) {
-        #body {
-          font-size: 20px;
-          text-align: left;
-        }
-      }
-
-      @media (min-width: 799px) {
-        .wrapper {
-          background-color: inherit;
-          padding: 0;
-        }
-      }
-
-      @media (min-width: 799px) {
-        .zipcode .innerWrapper {
-          display: inline-block;
-        }
-      }
-
-      .zipcode .innerWrapper {
-        display: flex;
-        flex-direction: column;
-      }
-
-      @media (min-width: 799px) {
-        .innerWrapper {
-          background: inherit;
-          border: 0;
-          border-radius: 0;
-          max-width: 100%;
-          padding: 0;
-        }
-      }
-
-      .zipcode .innerWrapper .nextButton {
-        order: 3;
-      }
-
-      @media (min-width: 799px) {
-        .hideBack input[type="button"] {
-          clear: none;
-          font-size: 1rem;
-          margin-left: 30px;
-          margin-top: 15px;
-          padding: 26px 40px;
-        }
-      }
-
-      .nextButton .input--text[type="button"],
-      .nextButton input[type="button"] {
-        display: inline;
-        font-weight: 700;
-      }
-
-      @media (min-width: 799px) {
-        .input--text[type="button"],
-        input[type="button"] {
-          clear: both;
-          min-width: 0;
-          padding: 24px 40px;
-          width: auto;
-        }
-      }
-
-      .nextButton .input--text[type="button"],
-      .nextButton input[type="button"] {
-        display: inline;
-        font-weight: 700;
-      }
-
-      @media (min-width: 799px) {
-        .input--text[type="button"],
-        input[type="button"] {
-          clear: both;
-          min-width: 0;
-          padding: 24px 40px;
-          width: auto;
-        }
-      }
-
-      @media (min-width: 799px) {
-        label {
-          color: #333;
-          display: inline-block;
-          font-size: 1.5rem;
-          font-weight: 600;
-          margin: 10px 0 5px;
-          padding-top: 3px;
-          font-family: Poppins, sans-serif;
-        }
-      }
-
-      .column {
-        flex: 1;
-        padding: 10px;
-      }
-
-      
-
-      #divPreviousInfo h2 span {
-        color: #218838;
-        font-family: Poppins;
-      }
-
-      .saved_items {
-        display: flex;
-        gap: 25px;
-      }
-
-      #lnkResumeInfo {
-        color: white;
-        padding: 20px;
-        background-color: green;
-        border: 2px;
-        border-radius: 7px;
-        text-decoration: none;
-        align-items: start;
-      }
-
-      .link-button {
-        background: none;
-        border: none;
-        padding: 0;
-        color: blue;
-        text-decoration: underline;
-        cursor: pointer;
-        font-family: inherit;
-        font-size: inherit;
-      }
-        */
-
-/*ZIP CODE STYLES END*/
