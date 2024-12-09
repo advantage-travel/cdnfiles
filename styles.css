@@ -234,6 +234,7 @@ input[type="email"] {
   margin-left: 0;
 }
 
+/* 
 .continue_btn {
   align-content: center;
   align-items: center;
@@ -255,7 +256,7 @@ input[type="email"] {
   padding: 13px 24px;
   text-transform: uppercase;
   transition: 0.15s;
-}
+} */
 
 .household-count-contents {
   margin: 0 auto;
