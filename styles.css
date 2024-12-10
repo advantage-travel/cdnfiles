@@ -201,6 +201,16 @@ input[type="email"] {
   display: none;
 }
 
+.info {
+  color: red;
+  display: block;
+  text-align: left;
+  padding: 5px;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+
 .show {
   display: block;
 }
@@ -341,8 +351,6 @@ input[type="email"] {
   margin: 0 auto;
 }
 
-
-
 .health-title {
   text-align: center;
   margin-bottom: 20px;
@@ -353,3 +361,14 @@ input[type="email"] {
   text-align: center;
   margin-top: 20px;
 }
+
+/*Height and Weight*/
+
+/* .info {
+  color: red;
+  display: block;
+  text-align: left;
+  padding: 5px;
+  margin-top: 5px;
+  font-size: 14px;
+} */
