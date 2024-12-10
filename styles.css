@@ -340,3 +340,16 @@ input[type="email"] {
   max-width: 400px;
   margin: 0 auto;
 }
+
+
+
+.health-title {
+  text-align: center;
+  margin-bottom: 20px;
+  white-space: nowrap; /* This ensures the title stays in a single line */
+}
+
+.continue-btn-container {
+  text-align: center;
+  margin-top: 20px;
+}
