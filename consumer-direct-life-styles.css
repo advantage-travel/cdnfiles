@@ -270,7 +270,7 @@ input[type="email"] {
 }
 
 .option-btn {
-  /* width: 225px; */
+  width: 225px;
   height: 50px;
   border: 2px solid #13bc59;
   background-color: white;
@@ -361,13 +361,53 @@ input[type="email"] {
   margin-top: 20px;
 }
 
-/*Height and Weight*/
+/* Additional styles for popup */
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  max-width: 500px;
+}
 
-/* .info {
-  color: red;
-  display: block;
-  text-align: left;
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
   padding: 5px;
-  margin-top: 5px;
-  font-size: 14px;
-} */
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.info-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0 5px;
+  font-size: 16px;
+  color: #666;
+}
+
