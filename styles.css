@@ -117,7 +117,6 @@ h1 {
   -webkit-transition: background-color 0.125s;
   transition: background-color 0.125s;
   margin-top: 30px;
-  -webkit-appearance: none;
 }
 
 .insurance-type-radio:checked
@@ -209,7 +208,6 @@ input[type="email"] {
   margin-top: 5px;
   font-size: 14px;
 }
-
 
 .show {
   display: block;
