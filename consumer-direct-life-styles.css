@@ -138,11 +138,11 @@
     color: #218838;
     display: inline-block;
     font-size: 1rem;
-    margin-bottom: 0;
     padding: 16px;
     text-transform: uppercase;
     transition: 0.15s;
     cursor: pointer;
+    margin: 20px 0px;
   }
 
   button:hover,
