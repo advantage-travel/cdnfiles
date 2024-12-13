@@ -1,8 +1,12 @@
-.custome-contents-consumer-direct-life {
-  body {
-    font-family: Poppins, sans-serif;
-  }
+.bgCover {
+  background-color: #f5f6f8 !important;
+}
 
+body {
+  font-family: Poppins, sans-serif;
+}
+
+.custome-contents-consumer-direct-life {
   .row {
     display: flex;
     width: 100%;
