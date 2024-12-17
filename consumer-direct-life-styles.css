@@ -86,7 +86,7 @@ body {
     font-size: 1.2em;
     font-weight: 600;
     text-align: center;
-    border: 1px solid #3ca131;
+    border: 1px solid #004aad;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border-radius: 4px;
@@ -102,7 +102,7 @@ body {
     box-sizing: border-box;
     width: 24px;
     height: 24px;
-    border: 1px solid #3ca131;
+    border: 1px solid #004aad;
     border-radius: 12px;
   }
 
@@ -114,7 +114,7 @@ body {
     width: 100%;
     text-align: center;
     border: none;
-    background-color: #3ca131;
+    background-color: #004aad;
     border-radius: 4px;
     font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
     font-weight: 600;
@@ -127,7 +127,7 @@ body {
   .insurance-type-radio:checked
     + .insurance-type-label
     .insurance-type-label-text:before {
-    background: url("") center / cover no-repeat #3ca131;
+    background: url("") center / cover no-repeat #004aad;
     left: 15px;
   }
 
@@ -138,8 +138,8 @@ body {
     -moz-appearance: none;
     appearance: none;
     background: none;
-    border: 2px solid #218838;
-    color: #218838;
+    border: 2px solid #004aad;
+    color: #004aad;
     display: inline-block;
     font-size: 1rem;
     padding: 16px;
@@ -152,8 +152,8 @@ body {
   button:hover,
   input[type="submit"]:hover,
   input[type="button"]:hover {
-    background: #218838;
-    border: 2px solid #218838;
+    background: #004aad;
+    border: 2px solid #004aad;
     color: #fff;
     font-weight: 700;
   }
@@ -223,7 +223,7 @@ body {
   }
 
   .continue-btn:hover {
-    background-color: #218838;
+    background-color: #004aad;
   }
 
   .continue-btn:disabled {
@@ -234,7 +234,7 @@ body {
   .continue-btn {
     margin-top: 20px;
     padding: 12px 30px;
-    background-color: #28a745;
+    background-color: #004aad;
     color: white;
     border: none;
     border-radius: 5px;
@@ -276,9 +276,9 @@ body {
   .option-btn {
     width: 225px;
     height: 50px;
-    border: 2px solid #13bc59;
+    border: 2px solid #004aad;
     background-color: white;
-    color: #0ac561;
+    color: #004aad;
     cursor: pointer;
     font-size: 18px;
     transition: all 0.3s ease;
@@ -292,7 +292,7 @@ body {
   }
 
   .option-btn.selected {
-    background-color: #28a745;
+    background-color: #004aad;
     color: white;
   }
 
