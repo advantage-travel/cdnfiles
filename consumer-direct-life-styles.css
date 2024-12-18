@@ -419,4 +419,43 @@ body {
     height: 50px;
     font-size: 24px;
   }
+
+  .life-progress-bar {
+    .progress-bar {
+      border-top: none;
+      padding: auto;
+      padding-top: 16px;
+    }
+
+    .progress-container {
+      margin: 30px auto 0;
+      margin: 13px;
+    }
+
+    .progress-filled {
+      background: #004aad;
+      border-radius: 10px;
+      height: 16px;
+      transition: all 0.3s ease-in-out;
+      width: 0;
+    }
+
+    .progress-unfilled {
+      background: #eaeaea;
+      border-radius: 10px;
+      height: 16px;
+      margin: auto;
+      max-width: 480px;
+      width: 100%;
+    }
+
+    .progress-percentage {
+      color: #004aad;
+      font-size: 16px;
+      font-weight: 600;
+      margin-top: 12px;
+      padding-right: 16px;
+      font-family: Poppins, sans-serif;
+    }
+  }
 }
