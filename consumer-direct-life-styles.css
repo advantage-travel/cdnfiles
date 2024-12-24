@@ -458,4 +458,14 @@ body {
       font-family: Poppins, sans-serif;
     }
   }
+
+  .saved_items {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .saved_items div {
+    width: 100px;
+    padding: 20px 30px;
+  }
 }
