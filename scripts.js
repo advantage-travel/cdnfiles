@@ -78,7 +78,7 @@ function readUserCookies() {
 
       // Search for the cookie
       const cookie = allCookies.find((c) => c.trim().startsWith(key + "="));
-
+      //debugger;
       if (cookie) {
         const value = cookie.split("=")[1].trim();
         if (value) {
@@ -95,4 +95,45 @@ function readUserCookies() {
     //console.error("Error reading cookies:", error);
     return {};
   }
+}
+
+function clearInsuranceCookies() {
+  const cookiesToClear = [
+    "insturance_type",
+    "postal_code",
+    "date_of_birth",
+    "email",
+    "gender",
+    "rated_health",
+    "height_feet",
+    "height_inches",
+    "weight_lbs",
+    "has_insurance",
+    "insurance_amount",
+    "term_insurance",
+    "permanent_insurance",
+    "final_expense_insurance",
+    "not_sure_insurance",
+    "personal_income",
+    "coverage_amount",
+    "coverage_term",
+    "tobacco_user",
+    "alcohol_condition",
+    "asthma_condition",
+    "blood_pressure_condition",
+    "cancer_condition",
+    "cholesterol_condition",
+    "depression_condition",
+    "diabetes_condition",
+    "heart_issue_condition",
+    "sleep_condition",
+    "good_driver",
+    "risk_activities",
+  ];
+
+  cookiesToClear.forEach((cookieName) => {
+    document.cookie = `${cookieName}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`;
+  });
+
+  //console.log("All specified insurance cookies have been cleared.");
 }

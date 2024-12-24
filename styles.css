@@ -360,13 +360,12 @@ input[type="email"] {
   margin-top: 20px;
 }
 
-/*Height and Weight*/
+.saved_items {
+  display: flex;
+  flex-direction: row;
+}
 
-/* .info {
-  color: red;
-  display: block;
-  text-align: left;
-  padding: 5px;
-  margin-top: 5px;
-  font-size: 14px;
-} */
+.saved_items div {
+  width: 100px;
+  padding: 20px 30px;
+}
