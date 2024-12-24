@@ -113,3 +113,479 @@ function clearInsuranceCookies() {
 
   //console.log("All specified insurance cookies have been cleared.");
 }
+
+function GetRedirectUrl(userCookies) {
+  try {
+    let urlToRedirect = "";
+    const insturance_type_cookie = userCookies["insturance_type"];
+    const postal_code_cookie = userCookies["postal_code"];
+    const date_of_birth_cookie = userCookies["date_of_birth"];
+    const email_cookie = userCookies["email"];
+    const gender_cookie = userCookies["gender"];
+    const rated_health_cookie = userCookies["rated_health"];
+    const height_feet_cookie = userCookies["height_feet"];
+    const height_inches_cookie = userCookies["height_inches"];
+    const weight_lbs_cookie = userCookies["weight_lbs"];
+    const has_insurance_cookie = userCookies["has_insurance"];
+    const insurance_interest_cookie = userCookies["insurance_interest"];
+    const personal_income_cookie = userCookies["personal_income"];
+    const coverage_amount_cookie = userCookies["coverage_amount"];
+    const coverage_term_cookie = userCookies["coverage_term"];
+    const tobacco_user_cookie = userCookies["tobacco_user"];
+    const med_conditions_cookie = userCookies["med_conditions"];
+    const good_driver_cookie = userCookies["good_driver"];
+    const risk_activities_cookie = userCookies["risk_activities"];
+
+    if (
+      insturance_type_cookie &&
+      postal_code_cookie &&
+      date_of_birth_cookie &&
+      email_cookie &&
+      gender_cookie &&
+      rated_health_cookie &&
+      height_feet_cookie &&
+      height_inches_cookie &&
+      weight_lbs_cookie &&
+      has_insurance_cookie &&
+      insurance_interest_cookie &&
+      personal_income_cookie &&
+      coverage_amount_cookie &&
+      coverage_term_cookie &&
+      tobacco_user_cookie &&
+      med_conditions_cookie &&
+      good_driver_cookie &&
+      risk_activities_cookie
+    ) {
+      urlToRedirect =
+        "https://consumerdirectlife.com/parent-sibling?insturance_type=" +
+        insturance_type_cookie +
+        "&postal_code=" +
+        postal_code_cookie +
+        "&date_of_birth=" +
+        date_of_birth_cookie +
+        "&email=" +
+        email_cookie +
+        "&gender=" +
+        gender_cookie +
+        "&rated_health=" +
+        rated_health_cookie +
+        "&height_feet=" +
+        height_feet_cookie +
+        "&height_inches=" +
+        height_inches_cookie +
+        "&weight_lbs=" +
+        weight_lbs_cookie +
+        "&has_insurance=" +
+        has_insurance_cookie +
+        "&insurance_interest=" +
+        insurance_interest_cookie +
+        "&personal_income=" +
+        personal_income_cookie +
+        "&coverage_amount=" +
+        coverage_amount_cookie +
+        "&coverage_term=" +
+        coverage_term_cookie +
+        "&tobacco_user=" +
+        tobacco_user_cookie +
+        "&med_conditions=" +
+        med_conditions_cookie +
+        "&good_driver=" +
+        good_driver_cookie +
+        "&risk_activities=" +
+        risk_activities_cookie;
+    } else if (
+      insturance_type_cookie &&
+      postal_code_cookie &&
+      date_of_birth_cookie &&
+      email_cookie &&
+      gender_cookie &&
+      rated_health_cookie &&
+      height_feet_cookie &&
+      height_inches_cookie &&
+      weight_lbs_cookie &&
+      has_insurance_cookie &&
+      insurance_interest_cookie &&
+      personal_income_cookie &&
+      coverage_amount_cookie &&
+      coverage_term_cookie &&
+      tobacco_user_cookie &&
+      med_conditions_cookie &&
+      good_driver_cookie
+    ) {
+      urlToRedirect =
+        "https://consumerdirectlife.com/activities?insturance_type=" +
+        insturance_type_cookie +
+        "&postal_code=" +
+        postal_code_cookie +
+        "&date_of_birth=" +
+        date_of_birth_cookie +
+        "&email=" +
+        email_cookie +
+        "&gender=" +
+        gender_cookie +
+        "&rated_health=" +
+        rated_health_cookie +
+        "&height_feet=" +
+        height_feet_cookie +
+        "&height_inches=" +
+        height_inches_cookie +
+        "&weight_lbs=" +
+        weight_lbs_cookie +
+        "&has_insurance=" +
+        has_insurance_cookie +
+        "&insurance_interest=" +
+        insurance_interest_cookie +
+        "&personal_income=" +
+        personal_income_cookie +
+        "&coverage_amount=" +
+        coverage_amount_cookie +
+        "&coverage_term=" +
+        coverage_term_cookie +
+        "&tobacco_user=" +
+        tobacco_user_cookie +
+        "&med_conditions=" +
+        med_conditions_cookie +
+        "&good_driver=" +
+        good_driver_cookie;
+    } else if (
+      insturance_type_cookie &&
+      postal_code_cookie &&
+      date_of_birth_cookie &&
+      email_cookie &&
+      gender_cookie &&
+      rated_health_cookie &&
+      height_feet_cookie &&
+      height_inches_cookie &&
+      weight_lbs_cookie &&
+      has_insurance_cookie &&
+      insurance_interest_cookie &&
+      personal_income_cookie &&
+      coverage_amount_cookie &&
+      coverage_term_cookie &&
+      tobacco_user_cookie &&
+      med_conditions_cookie
+    ) {
+      urlToRedirect =
+        "https://consumerdirectlife.com/driving?insturance_type=" +
+        insturance_type_cookie +
+        "&postal_code=" +
+        postal_code_cookie +
+        "&date_of_birth=" +
+        date_of_birth_cookie +
+        "&email=" +
+        email_cookie +
+        "&gender=" +
+        gender_cookie +
+        "&rated_health=" +
+        rated_health_cookie +
+        "&height_feet=" +
+        height_feet_cookie +
+        "&height_inches=" +
+        height_inches_cookie +
+        "&weight_lbs=" +
+        weight_lbs_cookie +
+        "&has_insurance=" +
+        has_insurance_cookie +
+        "&insurance_interest=" +
+        insurance_interest_cookie +
+        "&personal_income=" +
+        personal_income_cookie +
+        "&coverage_amount=" +
+        coverage_amount_cookie +
+        "&coverage_term=" +
+        coverage_term_cookie +
+        "&tobacco_user=" +
+        tobacco_user_cookie +
+        "&med_conditions=" +
+        med_conditions_cookie;
+    } else if (
+      insturance_type_cookie &&
+      postal_code_cookie &&
+      date_of_birth_cookie &&
+      email_cookie &&
+      gender_cookie &&
+      rated_health_cookie &&
+      height_feet_cookie &&
+      height_inches_cookie &&
+      weight_lbs_cookie &&
+      has_insurance_cookie &&
+      insurance_interest_cookie &&
+      personal_income_cookie &&
+      coverage_amount_cookie &&
+      coverage_term_cookie &&
+      tobacco_user_cookie
+    ) {
+      urlToRedirect =
+        "https://consumerdirectlife.com/conditions?insturance_type=" +
+        insturance_type_cookie +
+        "&postal_code=" +
+        postal_code_cookie +
+        "&date_of_birth=" +
+        date_of_birth_cookie +
+        "&email=" +
+        email_cookie +
+        "&gender=" +
+        gender_cookie +
+        "&rated_health=" +
+        rated_health_cookie +
+        "&height_feet=" +
+        height_feet_cookie +
+        "&height_inches=" +
+        height_inches_cookie +
+        "&weight_lbs=" +
+        weight_lbs_cookie +
+        "&has_insurance=" +
+        has_insurance_cookie +
+        "&insurance_interest=" +
+        insurance_interest_cookie +
+        "&personal_income=" +
+        personal_income_cookie +
+        "&coverage_amount=" +
+        coverage_amount_cookie +
+        "&coverage_term=" +
+        coverage_term_cookie +
+        "&tobacco_user=" +
+        tobacco_user_cookie;
+    } else if (
+      insturance_type_cookie &&
+      postal_code_cookie &&
+      date_of_birth_cookie &&
+      email_cookie &&
+      gender_cookie &&
+      rated_health_cookie &&
+      height_feet_cookie &&
+      height_inches_cookie &&
+      weight_lbs_cookie &&
+      has_insurance_cookie &&
+      insurance_interest_cookie &&
+      personal_income_cookie &&
+      coverage_amount_cookie &&
+      coverage_term_cookie
+    ) {
+      urlToRedirect =
+        "https://consumerdirectlife.com/tobacco_user?insturance_type=" +
+        insturance_type_cookie +
+        "&postal_code=" +
+        postal_code_cookie +
+        "&date_of_birth=" +
+        date_of_birth_cookie +
+        "&email=" +
+        email_cookie +
+        "&gender=" +
+        gender_cookie +
+        "&rated_health=" +
+        rated_health_cookie +
+        "&height_feet=" +
+        height_feet_cookie +
+        "&height_inches=" +
+        height_inches_cookie +
+        "&weight_lbs=" +
+        weight_lbs_cookie +
+        "&has_insurance=" +
+        has_insurance_cookie +
+        "&insurance_interest=" +
+        insurance_interest_cookie +
+        "&personal_income=" +
+        personal_income_cookie +
+        "&coverage_amount=" +
+        coverage_amount_cookie +
+        "&coverage_term=" +
+        coverage_term_cookie;
+    } else if (
+      insturance_type_cookie &&
+      postal_code_cookie &&
+      date_of_birth_cookie &&
+      email_cookie &&
+      gender_cookie &&
+      rated_health_cookie &&
+      height_feet_cookie &&
+      height_inches_cookie &&
+      weight_lbs_cookie &&
+      has_insurance_cookie &&
+      insurance_interest_cookie &&
+      personal_income_cookie
+    ) {
+      urlToRedirect =
+        "https://consumerdirectlife.com/amount-length?insturance_type=" +
+        insturance_type_cookie +
+        "&postal_code=" +
+        postal_code_cookie +
+        "&date_of_birth=" +
+        date_of_birth_cookie +
+        "&email=" +
+        email_cookie +
+        "&gender=" +
+        gender_cookie +
+        "&rated_health=" +
+        rated_health_cookie +
+        "&height_feet=" +
+        height_feet_cookie +
+        "&height_inches=" +
+        height_inches_cookie +
+        "&weight_lbs=" +
+        weight_lbs_cookie +
+        "&has_insurance=" +
+        has_insurance_cookie +
+        "&insurance_interest=" +
+        insurance_interest_cookie +
+        "&personal_income=" +
+        personal_income_cookie;
+    } else if (
+      insturance_type_cookie &&
+      postal_code_cookie &&
+      date_of_birth_cookie &&
+      email_cookie &&
+      gender_cookie &&
+      rated_health_cookie &&
+      height_feet_cookie &&
+      height_inches_cookie &&
+      weight_lbs_cookie &&
+      has_insurance_cookie &&
+      insurance_interest_cookie
+    ) {
+      urlToRedirect =
+        "https://consumerdirectlife.com/income?insturance_type=" +
+        insturance_type_cookie +
+        "&postal_code=" +
+        postal_code_cookie +
+        "&date_of_birth=" +
+        date_of_birth_cookie +
+        "&email=" +
+        email_cookie +
+        "&gender=" +
+        gender_cookie +
+        "&rated_health=" +
+        rated_health_cookie +
+        "&height_feet=" +
+        height_feet_cookie +
+        "&height_inches=" +
+        height_inches_cookie +
+        "&weight_lbs=" +
+        weight_lbs_cookie +
+        "&has_insurance=" +
+        has_insurance_cookie +
+        "&insurance_interest=" +
+        insurance_interest_cookie;
+    } else if (
+      insturance_type_cookie &&
+      postal_code_cookie &&
+      date_of_birth_cookie &&
+      email_cookie &&
+      gender_cookie &&
+      rated_health_cookie &&
+      height_feet_cookie &&
+      height_inches_cookie &&
+      weight_lbs_cookie &&
+      has_insurance_cookie
+    ) {
+      urlToRedirect =
+        "https://consumerdirectlife.com/insurance-preferences?insturance_type=" +
+        insturance_type_cookie +
+        "&postal_code=" +
+        postal_code_cookie +
+        "&date_of_birth=" +
+        date_of_birth_cookie +
+        "&email=" +
+        email_cookie +
+        "&gender=" +
+        gender_cookie +
+        "&rated_health=" +
+        rated_health_cookie +
+        "&height_feet=" +
+        height_feet_cookie +
+        "&height_inches=" +
+        height_inches_cookie +
+        "&weight_lbs=" +
+        weight_lbs_cookie +
+        "&has_insurance=" +
+        has_insurance_cookie;
+    } else if (
+      insturance_type_cookie &&
+      postal_code_cookie &&
+      date_of_birth_cookie &&
+      email_cookie &&
+      gender_cookie &&
+      rated_health_cookie &&
+      height_feet_cookie &&
+      height_inches_cookie &&
+      weight_lbs_cookie
+    ) {
+      urlToRedirect =
+        "https://consumerdirectlife.com/life-insurance?insturance_type=" +
+        insturance_type_cookie +
+        "&postal_code=" +
+        postal_code_cookie +
+        "&date_of_birth=" +
+        date_of_birth_cookie +
+        "&email=" +
+        email_cookie +
+        "&gender=" +
+        gender_cookie +
+        "&rated_health=" +
+        rated_health_cookie +
+        "&height_feet=" +
+        height_feet_cookie +
+        "&height_inches=" +
+        height_inches_cookie +
+        "&weight_lbs=" +
+        weight_lbs_cookie;
+    } else if (
+      insturance_type_cookie &&
+      postal_code_cookie &&
+      date_of_birth_cookie &&
+      email_cookie &&
+      gender_cookie &&
+      rated_health_cookie
+    ) {
+      urlToRedirect =
+        "https://consumerdirectlife.com/height-weight?insturance_type=" +
+        insturance_type_cookie +
+        "&postal_code=" +
+        postal_code_cookie +
+        "&date_of_birth=" +
+        date_of_birth_cookie +
+        "&email=" +
+        email_cookie +
+        "&gender=" +
+        gender_cookie +
+        "&rated_health=" +
+        rated_health_cookie;
+    } else if (
+      insturance_type_cookie &&
+      postal_code_cookie &&
+      date_of_birth_cookie &&
+      email_cookie &&
+      gender_cookie
+    ) {
+      urlToRedirect =
+        "https://consumerdirectlife.com/rate-health?insturance_type=" +
+        insturance_type_cookie +
+        "&postal_code=" +
+        postal_code_cookie +
+        "&date_of_birth=" +
+        date_of_birth_cookie +
+        "&email=" +
+        email_cookie +
+        "&gender=" +
+        gender_cookie;
+    } else if (
+      insturance_type_cookie &&
+      postal_code_cookie &&
+      date_of_birth_cookie &&
+      email_cookie
+    ) {
+      urlToRedirect =
+        "https://consumerdirectlife.com/gender?insturance_type=" +
+        insturance_type_cookie +
+        "&postal_code=" +
+        postal_code_cookie +
+        "&date_of_birth=" +
+        date_of_birth_cookie +
+        "&email=" +
+        email_cookie;
+    }
+    return urlToRedirect;
+  } catch (error) {
+    //console.log("GetRedirectUrl " + error);
+  }
+}
