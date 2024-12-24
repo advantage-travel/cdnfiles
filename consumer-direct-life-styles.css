@@ -464,6 +464,10 @@ body {
     flex-direction: row;
   }
 
+  .saved_items > div:first-child {
+    width: 150px;
+  }
+
   .saved_items div {
     width: 200px;
   }
