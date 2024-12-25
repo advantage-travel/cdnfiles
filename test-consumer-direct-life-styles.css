@@ -34,7 +34,7 @@ body {
     min-width: 300px;
     min-height: 70px;
   }
-  
+
   /* 
   .row {
     display: flex;
@@ -495,7 +495,8 @@ body {
   .custome-contents-consumer-direct-life {
     .custom-contents {
       margin: 0 auto;
-      min-height: 200px;
+      min-height: 300px;
+      min-width: 300px;
     }
   }
 }
