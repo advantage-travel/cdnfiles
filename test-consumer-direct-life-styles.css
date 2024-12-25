@@ -494,9 +494,13 @@ body {
 @media (max-width: 800px) {
   .custome-contents-consumer-direct-life {
     .custom-contents {
-      margin: 0 auto;
+      margin: 20px;
       min-height: 300px;
       min-width: 300px;
     }
+
+
+
+    
   }
 }
