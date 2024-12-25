@@ -7,6 +7,17 @@ body {
 }
 
 .custome-contents-consumer-direct-life {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .custom-contents {
+    margin: 0 auto;
+    min-height: 500px;
+    min-width: 500px;
+  }
+
   .row {
     display: flex;
     width: 100%;
@@ -185,17 +196,6 @@ body {
     width: 100%;
     float: left;
     padding: 24px;
-  }
-
-  .custom-contents {
-    margin: 0 auto;
-    min-height: 500px;
-    min-width: 500px;
-  }
-
-  .container {
-    display: flex;
-    flex-wrap: wrap;
   }
 
   .error {
@@ -470,5 +470,14 @@ body {
 
   .saved_items div {
     width: 300px;
+  }
+}
+
+@media (max-width: 800px) {
+  .custome-contents-consumer-direct-life {
+    .custom-contents {
+      margin: 0 auto;
+      min-height: 200px;
+    }
   }
 }
