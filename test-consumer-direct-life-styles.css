@@ -185,7 +185,8 @@ body {
     -moz-appearance: none;
     appearance: none;
     background: none;
-    border: 2px solid #004aad;
+    border: 3px solid #004aad;
+    border-radius: 8px;
     color: #004aad;
     display: inline-block;
     font-size: 1rem;
