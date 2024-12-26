@@ -46,6 +46,10 @@ body {
     text-align: center;
   }
 
+  .item-error {
+    min-height: 20px;
+  }
+
   /* 
   .row {
     display: flex;
