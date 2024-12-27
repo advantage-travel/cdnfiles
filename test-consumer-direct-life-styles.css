@@ -507,6 +507,10 @@ body {
   .saved_items div {
     width: 300px;
   }
+
+  .custom-contents.width-530px {
+    min-width: 530px;
+  }
 }
 
 @media (max-width: 800px) {
@@ -519,6 +523,14 @@ body {
 
     .hide-mobile-view {
       display: none;
+    }
+
+    .tooltiptext {
+      display: none;
+    }
+
+    .progress-container {
+      width: 100%;
     }
   }
 }
