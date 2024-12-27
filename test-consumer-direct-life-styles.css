@@ -7,10 +7,6 @@ body {
 }
 
 .custome-contents-consumer-direct-life {
-/*  display: flex;
-  justify-content: center;
-  align-items: center;*/
-
   .custom-contents {
     margin: 0px auto;
     min-height: 300px;
@@ -294,7 +290,6 @@ body {
   .progress-container {
     margin: 30px auto 0;
     margin: 13px;
-    min-width: 1000px;
   }
 
   .progress-filled {
