@@ -6,8 +6,15 @@ body {
   font-family: Poppins, sans-serif;
 }
 
+
 .custome-contents-consumer-direct-life {
-  .custom-contents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custome-contents-consumer-direct-life {
+    .custom-contents {
     margin: 0px auto;
     min-height: 300px;
     min-width: 300px;
