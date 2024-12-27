@@ -6,15 +6,12 @@ body {
   font-family: Poppins, sans-serif;
 }
 
-
 .custome-contents-consumer-direct-life {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-.custome-contents-consumer-direct-life {
-    .custom-contents {
+  .custom-contents {
     margin: 0px auto;
     min-height: 300px;
     min-width: 300px;
@@ -297,6 +294,7 @@ body {
   .progress-container {
     margin: 30px auto 0;
     margin: 13px;
+    min-width: 1000px;
   }
 
   .progress-filled {
@@ -357,6 +355,10 @@ body {
 
     .tooltiptext {
       display: none;
+    }
+
+    .progress-container {
+      width: 100%;
     }
   }
 }
