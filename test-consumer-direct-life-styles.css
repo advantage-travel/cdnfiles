@@ -1,62 +1,60 @@
 .bgCover {
-    background-color: #f5f6f8 !important;
+  background-color: #f5f6f8 !important;
 }
 
 body {
-    font-family: Poppins, sans-serif;
+  font-family: Poppins, sans-serif;
 }
 
 .custome-contents-consumer-direct-life {
-    .custom-contents
-
-{
+  .custom-contents {
     margin: 0px auto;
     min-height: 300px;
     min-width: 300px;
     border: 5px solid lightgray;
     padding: 10px;
     border-radius: 20px;
-}
+  }
 
-.items-container {
+  .items-container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
-}
+  }
 
-.item-element {
+  .item-element {
     min-width: 240px;
     min-height: 70px;
     text-align: left;
-}
+  }
 
-.items-container.items-diection-row {
+  .items-container.items-diection-row {
     align-items: flex-end;
     flex-direction: row;
-}
+  }
 
-.center {
+  .center {
     text-align: center;
-}
+  }
 
-.item-error {
+  .item-error {
     min-height: 20px;
-}
+  }
 
-h1 {
+  h1 {
     color: #333;
     margin-bottom: 5px;
     text-align: left;
     font-family: Poppins, sans-serif;
     font-size: 24px;
-}
+  }
 
-button,
-input[type="button"],
-input[type="submit"] {
+  button,
+  input[type="button"],
+  input[type="submit"] {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -71,18 +69,18 @@ input[type="submit"] {
     transition: 0.15s;
     cursor: pointer;
     margin: 20px 0px;
-}
+  }
 
-    button:hover,
-    input[type="submit"]:hover,
-    input[type="button"]:hover {
-        background: #004aad;
-        border: 2px solid #004aad;
-        color: #fff;
-        font-weight: 700;
-    }
+  button:hover,
+  input[type="submit"]:hover,
+  input[type="button"]:hover {
+    background: #004aad;
+    border: 2px solid #004aad;
+    color: #fff;
+    font-weight: 700;
+  }
 
-label {
+  label {
     color: #333;
     display: inline-block;
     font-size: 1.5rem;
@@ -90,11 +88,11 @@ label {
     margin: 10px 0 5px;
     padding-top: 3px;
     font-family: Poppins, sans-serif;
-}
+  }
 
-input[type="text"],
-input[type="date"],
-input[type="email"] {
+  input[type="text"],
+  input[type="date"],
+  input[type="email"] {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -109,50 +107,50 @@ input[type="email"] {
     /* width: 100%; */
     float: left;
     padding: 24px;
-}
+  }
 
-.error {
+  .error {
     color: red;
     font-size: 14px;
     margin-top: 5px;
     display: none;
-}
+  }
 
-.info {
+  .info {
     color: red;
     display: block;
     text-align: left;
     padding: 5px;
     margin-top: 5px;
     font-size: 14px;
-}
+  }
 
-.show {
+  .show {
     display: block;
-}
+  }
 
-.hide {
+  .hide {
     display: none !important;
-}
+  }
 
-.button-group {
+  .button-group {
     display: flex;
     flex-direction: column;
     gap: 15px;
     width: 100%;
     align-items: center;
-}
+  }
 
-.button-group {
+  .button-group {
     display: grid;
     grid-template-columns: repeat(4, 250px);
     grid-template-rows: repeat(2, auto);
     gap: 10px;
     justify-content: start;
     margin-bottom: 25px;
-}
+  }
 
-.option-btn {
+  .option-btn {
     width: 225px;
     height: 50px;
     border: 2px solid #004aad;
@@ -164,73 +162,72 @@ input[type="email"] {
     display: flex;
     align-items: center;
     justify-content: center;
-}
+  }
 
-.option-btn.selected {
+  .option-btn.selected {
     background-color: #004aad;
     color: white;
-}
+  }
 
-/* Tooltip styles */
-.tooltip {
+  /* Tooltip styles */
+  .tooltip {
     position: relative;
     display: block;
     margin: 10px 0;
-}
+  }
 
-    .tooltip .tooltiptext {
-        visibility: hidden;
-        background-color: rgba(0, 0, 0, 0.8);
-        color: white;
-        text-align: left;
-        padding: 12px 15px;
-        border-radius: 6px;
-        position: absolute;
-        z-index: 1;
-        left: 60%;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 250px;
-        opacity: 0;
-        transition: opacity 0.3s;
-        font-size: 11px;
-        line-height: 1.4;
-    }
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: left;
+    padding: 12px 15px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    left: 60%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 250px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 11px;
+    line-height: 1.4;
+  }
 
-        .tooltip .tooltiptext strong {
-            display: block;
-            margin-bottom: 5px;
-            font-size: 13px;
-            text-transform: uppercase; /* Make title uppercase */
-        }
+  .tooltip .tooltiptext strong {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 13px;
+    text-transform: uppercase; /* Make title uppercase */
+  }
 
-        .tooltip .tooltiptext::after {
-            content: "";
-            position: absolute;
-            top: 50%;
-            right: 100%;
-            margin-top: -5px;
-            border-width: 5px;
-            border-style: solid;
-            border-color: transparent rgba(0, 0, 0, 0.8) transparent transparent;
-        }
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent rgba(0, 0, 0, 0.8) transparent transparent;
+  }
 
-    .tooltip:hover .tooltiptext {
-        visibility: visible;
-        opacity: 1;
-    }
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
 
-/* Button group styles for single column */
-.button-group-column {
+  /* Button group styles for single column */
+  .button-group-column {
     display: flex;
     flex-direction: column;
     gap: 10px;
     max-width: 400px;
-}
+  }
 
-
-/* Additional styles for popup */
-.popup {
+  /* Additional styles for popup */
+  .popup {
     display: none;
     position: fixed;
     top: 50%;
@@ -242,24 +239,24 @@ input[type="email"] {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     max-width: 500px;
-}
+  }
 
-.popup-header {
+  .popup-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 15px;
-}
+  }
 
-.close-btn {
+  .close-btn {
     background: none;
     border: none;
     font-size: 20px;
     cursor: pointer;
     padding: 5px;
-}
+  }
 
-.overlay {
+  .overlay {
     display: none;
     position: fixed;
     top: 0;
@@ -268,91 +265,91 @@ input[type="email"] {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 999;
-}
+  }
 
-.info-icon {
+  .info-icon {
     background: none;
     border: none;
     cursor: pointer;
     padding: 0 5px;
     font-size: 16px;
     color: #666;
-}
+  }
 
-select {
+  select {
     height: 50px;
     font-size: 24px;
-}
+  }
 
-.life-progress-bar .progress-bar {
+  .life-progress-bar .progress-bar {
     border-top: none;
     padding: auto;
     padding-top: 16px;
-}
+  }
 
-.progress-container {
+  .progress-container {
     margin: 30px auto 0;
     margin: 13px;
-}
+  }
 
-.progress-filled {
+  .progress-filled {
     background: #004aad;
     border-radius: 10px;
     height: 16px;
     transition: all 0.3s ease-in-out;
     width: 0;
-}
+  }
 
-.progress-unfilled {
+  .progress-unfilled {
     background: #eaeaea;
     border-radius: 10px;
     height: 16px;
     margin: auto;
     max-width: 750px;
     width: 100%;
-}
+  }
 
-.progress-percentage {
+  .progress-percentage {
     color: #004aad;
     font-size: 16px;
     font-weight: 600;
     margin-top: 12px;
     padding-right: 16px;
     font-family: Poppins, sans-serif;
-}
+  }
 
-.saved_items {
+  .saved_items {
     display: flex;
     flex-direction: row;
-}
+  }
 
-    .saved_items > div:first-child {
-        width: 200px;
-    }
+  .saved_items > div:first-child {
+    width: 200px;
+  }
 
-    .saved_items div {
-        width: 300px;
-    }
+  .saved_items div {
+    width: 300px;
+  }
+
+  .custom-contents.width-400px {
+    min-width: 400px;
+  }
 }
 
 @media (max-width: 800px) {
-    .custome-contents-consumer-direct-life {
-        .custom-contents
+  .custome-contents-consumer-direct-life {
+    .custom-contents {
+      margin: 20px;
+      min-height: 300px;
+      max-width: 300px;
+    }
 
-{
-    margin: 20px;
-    min-height: 300px;
-    min-width: 300px;
-}
+    .hide-mobile-view {
+      display: none;
+    }
 
-.hide-mobile-view {
-    display: none;
-}
-
-.tooltiptext {
-    display: none;
-}
-
-
-}
+    .tooltiptext {
+      display: none;
+    }
+  }
 }
