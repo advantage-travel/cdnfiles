@@ -534,8 +534,10 @@ body {
       width: 100%;
     }
 
-    .progress-unfilled {
-      max-width: 300px;
+    .life-progress-bar {
+      .progress-unfilled {
+        max-width: 300px;
+      }
     }
   }
 }
