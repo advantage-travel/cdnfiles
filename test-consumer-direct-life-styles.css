@@ -281,7 +281,8 @@ body {
     font-size: 24px;
   }
 
-  .life-progress-bar .progress-bar {
+  .life-progress-bar {
+   .progress-bar {
     border-top: none;
     padding: auto;
     padding-top: 16px;
@@ -317,6 +318,7 @@ body {
     padding-right: 16px;
     font-family: Poppins, sans-serif;
   }
+}
 
   .saved_items {
     display: flex;
