@@ -10,7 +10,7 @@ body {
   .custom-contents {
     margin: 0px auto;
     min-height: 300px;
-    min-width: 520px;
+    min-width: 300px;
     border: 5px solid lightgray;
     padding: 10px;
     border-radius: 20px;
