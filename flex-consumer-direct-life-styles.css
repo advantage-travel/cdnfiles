@@ -7,6 +7,13 @@ body {
 }
 
 .custome-contents-consumer-direct-life {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.custome-contents-consumer-direct-life {
   .custom-contents {
     padding: 15px;
     border: 5px solid lightgray;
@@ -70,5 +77,45 @@ body {
     font-size: 14px;
     margin-top: 5px;
     display: none;
+  }
+}
+
+/*PROGRESS BAR*/
+.life-progress-bar {
+  .progress-bar {
+    border-top: none;
+    padding: auto;
+    padding-top: 16px;
+  }
+
+  .progress-container {
+    margin: 30px auto 0;
+    margin: 13px;
+  }
+
+  .progress-filled {
+    background: #004aad;
+    border-radius: 10px;
+    height: 16px;
+    transition: all 0.3s ease-in-out;
+    width: 0;
+  }
+
+  .progress-unfilled {
+    background: #eaeaea;
+    border-radius: 10px;
+    height: 16px;
+    margin: auto;
+    max-width: 800px;
+    width: 100%;
+  }
+
+  .progress-percentage {
+    color: #004aad;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 12px;
+    padding-right: 16px;
+    font-family: Poppins, sans-serif;
   }
 }
