@@ -1,0 +1,74 @@
+.bgCover {
+  background-color: #f5f6f8 !important;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+}
+
+.custome-contents-consumer-direct-life {
+  .custom-contents {
+    padding: 15px;
+    border: 5px solid lightgray;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+  }
+
+  .item-element {
+    min-width: 150px;
+  }
+
+  /*BUTTONS STYLE*/
+  button,
+  input[type="submit"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 3px solid #004aad;
+    border-radius: 8px;
+    color: #004aad;
+    font-size: 1rem;
+    padding: 16px;
+    text-transform: uppercase;
+    transition: 0.15s;
+    cursor: pointer;
+    background-color: lightgray;
+  }
+
+  button:hover,
+  input[type="submit"]:hover {
+    background: #004aad;
+    border: 2px solid #004aad;
+    color: #fff;
+    font-weight: 700;
+  }
+
+  /*TEXT BOX STYLES*/
+  input[type="text"],
+  input[type="date"],
+  input[type="email"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid #d8d8d8;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 20px;
+    padding: 24px 16px;
+  }
+
+  /*ERROR MESSAGES*/
+
+  .error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+  }
+}
