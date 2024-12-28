@@ -15,6 +15,7 @@ body {
 
 .custome-contents-consumer-direct-life {
   .custom-contents {
+    width: 500px;
     padding: 15px;
     border: 5px solid lightgray;
     border-radius: 8px;
@@ -22,7 +23,7 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     flex-wrap: nowrap;
   }
 
@@ -70,6 +71,31 @@ body {
     padding: 24px 16px;
   }
 
+  /*GENDER*/
+
+  .option-btn {
+    width: 225px;
+    height: 50px;
+    border: 2px solid #004aad;
+    background-color: white;
+    color: #004aad;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .option-btn:hover {
+    background-color: #e7f1ff;
+  }
+
+  .option-btn.selected {
+    background-color: #004aad;
+    color: white;
+  }
+
   /*ERROR MESSAGES*/
 
   .error {
@@ -84,6 +110,33 @@ body {
     margin-bottom: 5px;
     font-family: Poppins, sans-serif;
     font-size: 24px;
+  }
+}
+
+@media (max-width: 800px) {
+  .custome-contents-consumer-direct-life {
+    .custom-contents {
+      min-height: 300px;
+      width: 250px;
+    }
+
+    .hide-mobile-view {
+      display: none;
+    }
+
+    .tooltiptext {
+      display: none;
+    }
+
+    .progress-container {
+      width: 100%;
+    }
+
+    .life-progress-bar {
+      .progress-unfilled {
+        max-width: 300px;
+      }
+    }
   }
 }
 
