@@ -112,6 +112,10 @@ body {
     font-size: 24px;
   }
 
+  h3 {
+    margin-bottom: 5px;
+  }
+
   /*RATE HEALTH*/
   .tooltip-container {
     position: relative;
@@ -130,6 +134,12 @@ body {
 
   .tooltip-container:hover .tooltip {
     display: block;
+  }
+
+  /*HEIGHT WEIGHT*/
+  .info {
+    display: block;
+    color: red;
   }
 }
 
