@@ -290,7 +290,7 @@ body {
   .custome-contents-consumer-direct-life {
     .custom-contents {
       min-height: 300px;
-      width: 250px;
+      width: 100%;
     }
 
     .hide-mobile-view {
