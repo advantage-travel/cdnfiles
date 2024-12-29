@@ -586,6 +586,6 @@ function GetRedirectUrl(userCookies) {
     }
     return urlToRedirect;
   } catch (error) {
-    //console.log("GetRedirectUrl " + error);
+   // console.log("GetRedirectUrl " + error);
   }
 }
