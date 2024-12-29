@@ -290,7 +290,7 @@ body {
   .custome-contents-consumer-direct-life {
     .custom-contents {
       min-height: 300px;
-      width: 100%;
+      width: 300px;
     }
 
     .hide-mobile-view {
@@ -328,6 +328,11 @@ body {
     .flex-2-elements-row {
       flex-direction: column;
       align-items: center;
+      max-width: 300px;
+    }
+
+    .tooltip {
+      display: none;
     }
   }
 }
