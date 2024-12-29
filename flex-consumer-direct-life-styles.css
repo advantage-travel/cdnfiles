@@ -27,8 +27,21 @@ body {
     flex-wrap: nowrap;
   }
 
+  .flex-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+  }
+
   .item-element {
     min-width: 150px;
+    border: 1px solid red;
+  }
+
+  .align-end {
+    align-self: flex-end;
   }
 
   /*BUTTONS STYLE*/
@@ -67,8 +80,8 @@ body {
     border: 1px solid #d8d8d8;
     border-radius: 5px;
     box-sizing: border-box;
-    font-size: 20px;
-    padding: 24px 16px;
+    font-size: 16px;
+    padding: 16px;
   }
 
   /*GENDER*/
@@ -102,7 +115,7 @@ body {
     color: red;
     font-size: 14px;
     margin-top: 5px;
-    display: none;
+    visibility: hidden;
   }
 
   h1 {
@@ -113,7 +126,7 @@ body {
   }
 
   h3 {
-    margin-bottom: 5px;
+    margin: 5px;
   }
 
   /*RATE HEALTH*/
@@ -137,36 +150,13 @@ body {
   }
 
   /*HEIGHT WEIGHT*/
-  .info {
+  /* .info {
     display: block;
     color: red;
-  }
-}
+  } */
 
-@media (max-width: 800px) {
-  .custome-contents-consumer-direct-life {
-    .custom-contents {
-      min-height: 300px;
-      width: 250px;
-    }
-
-    .hide-mobile-view {
-      display: none;
-    }
-
-    .tooltiptext {
-      display: none;
-    }
-
-    .progress-container {
-      width: 100%;
-    }
-
-    .life-progress-bar {
-      .progress-unfilled {
-        max-width: 300px;
-      }
-    }
+  .hide {
+    visibility: hidden;
   }
 }
 
@@ -207,5 +197,42 @@ body {
     margin-top: 12px;
     padding-right: 16px;
     font-family: Poppins, sans-serif;
+  }
+}
+
+@media (max-width: 800px) {
+  .custome-contents-consumer-direct-life {
+    .custom-contents {
+      min-height: 300px;
+      width: 250px;
+    }
+
+    .hide-mobile-view {
+      display: none;
+    }
+
+    .tooltiptext {
+      display: none;
+    }
+
+    .progress-container {
+      width: 100%;
+    }
+
+    .life-progress-bar {
+      .progress-unfilled {
+        max-width: 300px;
+      }
+    }
+
+    .flex-row {
+      flex-direction: column;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="email"] {
+      width: 100%;
+    }
   }
 }
