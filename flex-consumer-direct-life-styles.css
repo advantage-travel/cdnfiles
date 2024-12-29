@@ -52,6 +52,24 @@ body {
     align-self: flex-end;
   }
 
+  /*TWO ELEMENT PER ROW FLEX*/
+
+  .flex-2-elements-row {
+    width: 530px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* adds space between items */
+    padding: 15px;
+    border: 5px solid lightgray;
+    border-radius: 8px;
+  }
+
+  .flex-2-elements-row .item-element {
+    flex: 0 0 calc(50% - 20px); /* Takes up roughly half the container width minus gap */
+    max-width: 300px; /* Optional: limits maximum width of each button */
+  }
+
   /*BUTTONS STYLE*/
   label,
   button,
@@ -300,6 +318,11 @@ body {
 
     .hide {
       display: none;
+    }
+
+    .flex-2-elements-row {
+      flex-direction: column;
+      align-items: center;
     }
   }
 }
