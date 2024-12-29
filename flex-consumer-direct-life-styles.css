@@ -14,6 +14,14 @@ body {
 }
 
 .custome-contents-consumer-direct-life {
+  *,
+  :after,
+  :before {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: inherit;
+  }
+
   .custom-contents {
     width: 500px;
     padding: 15px;
