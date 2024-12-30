@@ -180,12 +180,6 @@ body {
     display: block;
   }
 
-  /*HEIGHT WEIGHT*/
-  /* .info {
-    display: block;
-    color: red;
-  } */
-
   .hide {
     visibility: hidden;
   }
@@ -243,6 +237,20 @@ body {
   select {
     height: 50px;
     font-size: 24px;
+  }
+
+  /*THANK YOU PAGE*/
+  p {
+    color: #34495e;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-family: Poppins, sans-serif;
+    text-align: left;
+  }
+
+  .tick {
+    font-size: 60px !important;
+    color: #004aad;
   }
 }
 
