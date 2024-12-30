@@ -276,6 +276,10 @@ body {
     visibility: hidden;
   }
 
+  .hidden {
+    display: none;
+  }
+
   /*INSURANCE PREFERENCES*/
   .popup {
     display: none;
