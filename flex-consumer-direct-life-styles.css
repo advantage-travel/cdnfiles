@@ -191,6 +191,7 @@ body {
 
   .submit-input {
     display: block;
+    padding: 0px;
     height: 60px;
     font-size: 1.2em;
     color: #fff;
@@ -442,6 +443,12 @@ body {
 
     .tooltip {
       display: none;
+    }
+
+    /*HOME PAGE*/
+
+    .insurance-type-grid {
+      grid-template-columns: repeat(1, 1fr);
     }
   }
 }
