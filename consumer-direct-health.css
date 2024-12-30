@@ -1,0 +1,479 @@
+.bgCover {
+  background-color: #f5f6f8 !important;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+}
+
+.custome-contents-consumer-direct-life {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.custome-contents-consumer-direct-life {
+  *,
+  :after,
+  :before {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: inherit;
+  }
+
+  .custom-contents {
+    width: 530px;
+    padding: 15px;
+    border: 5px solid lightgray;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: nowrap;
+  }
+
+  .flex-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+  }
+
+  .item-element {
+    min-width: 150px;
+    /* border: 1px solid red; */
+  }
+
+  .align-end {
+    align-self: flex-end;
+  }
+
+  /*TWO ELEMENT PER ROW FLEX*/
+
+  .flex-2-elements-row {
+    width: 530px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* adds space between items */
+    padding: 15px;
+    border: 5px solid lightgray;
+    border-radius: 8px;
+  }
+
+  .flex-2-elements-row .item-element {
+    flex: 0 0 calc(50% - 20px); /* Takes up roughly half the container width minus gap */
+    max-width: 300px; /* Optional: limits maximum width of each button */
+  }
+
+  /*BUTTONS STYLE*/
+  label,
+  button,
+  input[type="submit"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 3px solid #004aad;
+    border-radius: 8px;
+    color: #004aad;
+    font-size: 1rem;
+    padding: 16px;
+    text-transform: uppercase;
+    transition: 0.15s;
+    cursor: pointer;
+    background-color: lightgray;
+  }
+
+  label {
+    text-align: center;
+  }
+
+  button:hover,
+  input[type="submit"]:hover {
+    background: #004aad;
+    border: 2px solid #004aad;
+    color: #fff;
+    font-weight: 700;
+  }
+
+  /*TEXT BOX STYLES*/
+  input[type="text"],
+  input[type="date"],
+  input[type="email"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid #d8d8d8;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 16px;
+    margin: 0px 10px;
+  }
+
+  /*HOME PAGE*/
+
+  .insurance-types-container {
+    max-width: 450px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .insurance-type-label {
+    background: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 16px;
+    min-height: 90px;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: center;
+    border: 1px solid #004aad;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 4px;
+    -webkit-transition: background-color 0.125s;
+    transition: background-color 0.125s;
+  }
+
+  .radio-option:hover {
+    background-color: #f8f8f8;
+  }
+
+  .insurance-type-radio {
+    display: block;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    margin: 0;
+  }
+
+  .insurance-type-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+  }
+
+  .insurance-type-radio:checked
+    + .insurance-type-label
+    .insurance-type-label-text:before {
+    background: url("") center / cover no-repeat #004aad;
+    left: 15px;
+  }
+
+  .insurance-type-label-text:before {
+    content: "";
+    display: block;
+    margin: 0 auto 8px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #004aad;
+    border-radius: 12px;
+  }
+
+  .submit-input {
+    display: block;
+    padding: 0px;
+    height: 60px;
+    font-size: 1.2em;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    border: none;
+    background-color: #004aad;
+    border-radius: 4px;
+    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    -webkit-transition: background-color 0.125s;
+    transition: background-color 0.125s;
+    margin-top: 30px;
+  }
+
+  /*ZIP CODE*/
+  .grid-2-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+  }
+
+  .saved_items {
+    display: flex;
+  }
+
+  .saved_items > div:first-child {
+    font-weight: bold;
+  }
+
+  .saved_items > div:first-child::after {
+    content: ":";
+    margin: 0px 5px;
+    font-weight: bold;
+  }
+
+  /*GENDER*/
+
+  .option-btn {
+    width: 200px;
+    /* height: 50px; */
+    border: 2px solid #004aad;
+    background-color: white;
+    color: #004aad;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .option-btn:hover {
+    background-color: #e7f1ff;
+  }
+
+  .option-btn.selected {
+    background-color: #004aad;
+    color: white;
+  }
+
+  /*ERROR MESSAGES*/
+
+  .error {
+    color: red;
+    margin-top: 5px;
+  }
+
+  h1 {
+    color: #333;
+    margin-bottom: 5px;
+    font-family: Poppins, sans-serif;
+    font-size: 24px;
+  }
+
+  h3 {
+    margin: 5px;
+  }
+
+  /*RATE HEALTH*/
+  .tooltip-container {
+    position: relative;
+  }
+
+  .tooltip {
+    display: none;
+    position: absolute;
+    background: #333;
+    color: white;
+    padding: 10px;
+    left: 100%;
+    margin-left: 5px;
+    width: 150px;
+  }
+
+  .tooltip-container:hover .tooltip {
+    display: block;
+  }
+
+  .hide {
+    visibility: hidden;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  /*INSURANCE PREFERENCES*/
+  .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    max-width: 500px;
+  }
+
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+
+  .popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px;
+  }
+
+  .info-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 5px;
+    font-size: 16px;
+    color: #666;
+  }
+
+  select {
+    height: 50px;
+    font-size: 24px;
+  }
+
+  /*THANK YOU PAGE*/
+  p {
+    color: #34495e;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-family: Poppins, sans-serif;
+    text-align: left;
+  }
+
+  .tick {
+    font-size: 60px !important;
+    color: #004aad;
+  }
+
+  .anchor-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #004aad;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+}
+
+/*PROGRESS BAR*/
+.life-progress-bar {
+  .progress-bar {
+    border-top: none;
+    padding: auto;
+    padding-top: 16px;
+  }
+
+  .progress-container {
+    margin: 30px auto 0;
+    margin: 13px;
+  }
+
+  .progress-filled {
+    background: #004aad;
+    border-radius: 10px;
+    height: 16px;
+    transition: all 0.3s ease-in-out;
+    width: 0;
+  }
+
+  .progress-unfilled {
+    background: #eaeaea;
+    border-radius: 10px;
+    height: 16px;
+    margin: auto;
+    max-width: 800px;
+    width: 100%;
+  }
+
+  .progress-percentage {
+    color: #004aad;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 12px;
+    padding-right: 16px;
+    font-family: Poppins, sans-serif;
+  }
+}
+
+@media (max-width: 800px) {
+  .custome-contents-consumer-direct-life {
+    .custom-contents {
+      min-height: 300px;
+      width: 300px;
+    }
+
+    .hide-mobile-view {
+      display: none;
+    }
+
+    .tooltiptext {
+      display: none;
+    }
+
+    .progress-container {
+      width: 100%;
+    }
+
+    .life-progress-bar {
+      .progress-unfilled {
+        max-width: 300px;
+      }
+    }
+
+    .flex-row {
+      flex-direction: column;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="email"] {
+      width: 100%;
+    }
+
+    .hide {
+      display: none;
+    }
+
+    .flex-2-elements-row {
+      flex-direction: column;
+      align-items: center;
+      max-width: 300px;
+    }
+
+    .tooltip {
+      display: none;
+    }
+
+    /*HOME PAGE*/
+    .insurance-type-grid,
+    .grid-2-columns {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
