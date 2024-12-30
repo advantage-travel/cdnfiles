@@ -77,9 +77,9 @@ body {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    border: 3px solid #004aad;
+    border: 3px solid #08c177;
     border-radius: 8px;
-    color: #004aad;
+    color: #08c177;
     font-size: 1rem;
     padding: 16px;
     text-transform: uppercase;
@@ -94,8 +94,8 @@ body {
 
   button:hover,
   input[type="submit"]:hover {
-    background: #004aad;
-    border: 2px solid #004aad;
+    background: #08c177;
+    border: 2px solid #08c177;
     color: #fff;
     font-weight: 700;
   }
@@ -144,7 +144,7 @@ body {
     font-size: 1.2em;
     font-weight: 600;
     text-align: center;
-    border: 1px solid #004aad;
+    border: 1px solid #08c177;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border-radius: 4px;
@@ -173,7 +173,7 @@ body {
   .insurance-type-radio:checked
     + .insurance-type-label
     .insurance-type-label-text:before {
-    background: url("") center / cover no-repeat #004aad;
+    background: url("") center / cover no-repeat #08c177;
     left: 15px;
   }
 
@@ -185,7 +185,7 @@ body {
     box-sizing: border-box;
     width: 24px;
     height: 24px;
-    border: 1px solid #004aad;
+    border: 1px solid #08c177;
     border-radius: 12px;
   }
 
@@ -198,7 +198,7 @@ body {
     width: 100%;
     text-align: center;
     border: none;
-    background-color: #004aad;
+    background-color: #08c177;
     border-radius: 4px;
     font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
     font-weight: 600;
@@ -234,9 +234,9 @@ body {
   .option-btn {
     width: 200px;
     /* height: 50px; */
-    border: 2px solid #004aad;
+    border: 2px solid #08c177;
     background-color: white;
-    color: #004aad;
+    color: #08c177;
     cursor: pointer;
     font-size: 16px;
     transition: all 0.3s ease;
@@ -251,7 +251,7 @@ body {
   }
 
   .option-btn.selected {
-    background-color: #004aad;
+    background-color: #08c177;
     color: white;
   }
 
@@ -367,13 +367,13 @@ body {
 
   .tick {
     font-size: 60px !important;
-    color: #004aad;
+    color: #08c177;
   }
 
   .anchor-btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #004aad;
+    background-color: #08c177;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -395,7 +395,7 @@ body {
   }
 
   .progress-filled {
-    background: #004aad;
+    background: #08c177;
     border-radius: 10px;
     height: 16px;
     transition: all 0.3s ease-in-out;
@@ -412,7 +412,7 @@ body {
   }
 
   .progress-percentage {
-    color: #004aad;
+    color: #08c177;
     font-size: 16px;
     font-weight: 600;
     margin-top: 12px;
