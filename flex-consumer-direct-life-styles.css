@@ -116,6 +116,97 @@ body {
     margin: 0px 10px;
   }
 
+  /*HOME PAGE*/
+
+  .insurance-types-container {
+    max-width: 450px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .insurance-type-label {
+    background: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 16px;
+    min-height: 90px;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: center;
+    border: 1px solid #004aad;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 4px;
+    -webkit-transition: background-color 0.125s;
+    transition: background-color 0.125s;
+  }
+
+  .radio-option:hover {
+    background-color: #f8f8f8;
+  }
+
+  .insurance-type-radio {
+    display: block;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    margin: 0;
+  }
+
+  .insurance-type-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+  }
+
+  .insurance-type-radio:checked
+    + .insurance-type-label
+    .insurance-type-label-text:before {
+    background: url("") center / cover no-repeat #004aad;
+    left: 15px;
+  }
+
+  .insurance-type-label-text:before {
+    content: "";
+    display: block;
+    margin: 0 auto 8px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #004aad;
+    border-radius: 12px;
+  }
+
+  .submit-input {
+    display: block;
+    height: 30px;
+    font-size: 1.2em;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    border: none;
+    background-color: #004aad;
+    border-radius: 4px;
+    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    -webkit-transition: background-color 0.125s;
+    transition: background-color 0.125s;
+    margin-top: 30px;
+  }
+
   /*GENDER*/
 
   .option-btn {
