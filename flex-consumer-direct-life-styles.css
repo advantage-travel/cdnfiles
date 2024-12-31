@@ -286,7 +286,8 @@ body {
     padding: 10px;
     left: 100%;
     margin-left: 5px;
-    width: 150px;
+    width: 100%;
+    z-index: 10;
   }
 
   .tooltip-container:hover .tooltip {
