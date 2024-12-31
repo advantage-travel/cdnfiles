@@ -468,7 +468,7 @@ body {
     }
 
     .tooltip {
-      display: none;
+      left: -50px;
     }
 
     /*HOME PAGE*/
