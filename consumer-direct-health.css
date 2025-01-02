@@ -420,6 +420,10 @@ body {
     padding-right: 16px;
     font-family: Poppins, sans-serif;
   }
+
+  .text-area {
+    width: 510px;
+  }
 }
 
 @media (max-width: 800px) {
