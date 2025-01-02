@@ -483,8 +483,8 @@ body {
     }
 
     .text-area {
-      max-width: 300px;
-      min-width: 300px;
+      max-width: 280px;
+      min-width: 280px;
     }
   }
 }
