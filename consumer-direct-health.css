@@ -380,6 +380,11 @@ body {
     border-radius: 5px;
     transition: background-color 0.3s ease;
   }
+
+  .textarea {
+    width: 510px;
+    max-width: 510px;
+  }
 }
 
 /*PROGRESS BAR*/
@@ -419,11 +424,6 @@ body {
     margin-top: 12px;
     padding-right: 16px;
     font-family: Poppins, sans-serif;
-  }
-
-  .text-area {
-    min-width: 510px;
-    max-width: 510px;
   }
 }
 
@@ -482,9 +482,9 @@ body {
       grid-template-columns: repeat(1, 1fr);
     }
 
-    .text-area {
+    .textarea {
       max-width: 280px;
-      min-width: 280px;
+      width: 280px;
     }
   }
 }
