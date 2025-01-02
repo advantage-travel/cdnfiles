@@ -422,7 +422,8 @@ body {
   }
 
   .text-area {
-    width: 510px;
+    min-width: 510px;
+    max-width: 510px;
   }
 }
 
@@ -479,6 +480,11 @@ body {
     .insurance-type-grid,
     .grid-2-columns {
       grid-template-columns: repeat(1, 1fr);
+    }
+
+    .text-area {
+      max-width: 300px;
+      min-width: 300px;
     }
   }
 }
