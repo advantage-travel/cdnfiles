@@ -86,6 +86,7 @@ body {
     transition: 0.15s;
     cursor: pointer;
     background-color: lightgray;
+    font-weight: 700;
   }
 
   label {
@@ -95,9 +96,7 @@ body {
   button:hover,
   input[type="submit"]:hover {
     background: #08c177;
-    border: 2px solid #08c177;
     color: #fff;
-    font-weight: 700;
   }
 
   /*TEXT BOX STYLES*/
