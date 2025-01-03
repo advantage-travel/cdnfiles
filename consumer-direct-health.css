@@ -70,6 +70,32 @@ body {
     max-width: 300px; /* Optional: limits maximum width of each button */
   }
 
+  /*FOUR ELEMENT PER ROW FLEX*/
+
+  .flex-4-elements-row {
+    width: 750px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* adds space between items */
+    padding: 15px;
+    border: 5px solid lightgray;
+    border-radius: 8px;
+  }
+
+  .flex-4-elements-row .item-element {
+    flex: 0 0 calc(20% - 10px); /* Takes up roughly half the container width minus gap */
+    /*max-width: 300px;  Optional: limits maximum width of each button */
+  }
+
+  .flex-4-elements-row .option-btn {
+    min-width: 0;
+    flex-basis: 0;
+    flex-grow: 1;
+    overflow-x: auto;
+    width: 75%;
+  }
+
   /*BUTTONS STYLE*/
   label,
   button,
