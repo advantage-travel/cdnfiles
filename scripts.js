@@ -55,6 +55,8 @@ function readUserCookies() {
       "med_conditions",
       "good_driver",
       "risk_activities",
+      "parent_sibling_issues",
+      "first_name",
     ];
 
     const cookies = {};
@@ -105,6 +107,8 @@ function clearInsuranceCookies() {
     "med_conditions",
     "good_driver",
     "risk_activities",
+    "parent_sibling_issues",
+    "first_name",
   ];
 
   cookiesToClear.forEach((cookieName) => {
@@ -586,6 +590,6 @@ function GetRedirectUrl(userCookies) {
     }
     return urlToRedirect;
   } catch (error) {
-   // console.log("GetRedirectUrl " + error);
+    // console.log("GetRedirectUrl " + error);
   }
 }
