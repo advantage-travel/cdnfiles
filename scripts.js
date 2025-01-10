@@ -139,8 +139,71 @@ function GetRedirectUrl(userCookies) {
     const med_conditions_cookie = userCookies["med_conditions"];
     const good_driver_cookie = userCookies["good_driver"];
     const risk_activities_cookie = userCookies["risk_activities"];
+    const parent_sibling_issues_cookie = userCookies["parent_sibling_issues"];
 
     if (
+      insturance_type_cookie &&
+      postal_code_cookie &&
+      date_of_birth_cookie &&
+      email_cookie &&
+      gender_cookie &&
+      rated_health_cookie &&
+      height_feet_cookie &&
+      height_inches_cookie &&
+      weight_lbs_cookie &&
+      has_insurance_cookie &&
+      insurance_interest_cookie &&
+      personal_income_cookie &&
+      coverage_amount_cookie &&
+      coverage_term_cookie &&
+      tobacco_user_cookie &&
+      med_conditions_cookie &&
+      good_driver_cookie &&
+      risk_activities_cookie &&
+      parent_sibling_issues_cookie
+    ) {
+      urlToRedirect =
+        "https://consumerdirectlife.com/info1?insturance_type=" +
+        insturance_type_cookie +
+        "&postal_code=" +
+        postal_code_cookie +
+        "&date_of_birth=" +
+        date_of_birth_cookie +
+        "&email=" +
+        email_cookie +
+        "&gender=" +
+        gender_cookie +
+        "&rated_health=" +
+        rated_health_cookie +
+        "&height_feet=" +
+        height_feet_cookie +
+        "&height_inches=" +
+        height_inches_cookie +
+        "&weight_lbs=" +
+        weight_lbs_cookie +
+        "&has_insurance=" +
+        has_insurance_cookie +
+        "&insurance_interest=" +
+        insurance_interest_cookie +
+        "&personal_income=" +
+        personal_income_cookie +
+        "&coverage_amount=" +
+        coverage_amount_cookie +
+        "&coverage_term=" +
+        coverage_term_cookie +
+        "&tobacco_user=" +
+        tobacco_user_cookie +
+        "&med_conditions=" +
+        med_conditions_cookie +
+        "&good_driver=" +
+        good_driver_cookie +
+        "&risk_activities=" +
+        risk_activities_cookie +
+        "&parent_sibling_issues=" +
+        parent_sibling_issues_cookie;
+
+      setCookie("progress", "95%", 1);
+    } else if (
       insturance_type_cookie &&
       postal_code_cookie &&
       date_of_birth_cookie &&
@@ -197,6 +260,7 @@ function GetRedirectUrl(userCookies) {
         good_driver_cookie +
         "&risk_activities=" +
         risk_activities_cookie;
+      setCookie("progress", "90%", 1);
     } else if (
       insturance_type_cookie &&
       postal_code_cookie &&
@@ -251,6 +315,7 @@ function GetRedirectUrl(userCookies) {
         med_conditions_cookie +
         "&good_driver=" +
         good_driver_cookie;
+      setCookie("progress", "85%", 1);
     } else if (
       insturance_type_cookie &&
       postal_code_cookie &&
@@ -302,6 +367,7 @@ function GetRedirectUrl(userCookies) {
         tobacco_user_cookie +
         "&med_conditions=" +
         med_conditions_cookie;
+      setCookie("progress", "80%", 1);
     } else if (
       insturance_type_cookie &&
       postal_code_cookie &&
@@ -350,6 +416,7 @@ function GetRedirectUrl(userCookies) {
         coverage_term_cookie +
         "&tobacco_user=" +
         tobacco_user_cookie;
+      setCookie("progress", "75%", 1);
     } else if (
       insturance_type_cookie &&
       postal_code_cookie &&
@@ -395,6 +462,7 @@ function GetRedirectUrl(userCookies) {
         coverage_amount_cookie +
         "&coverage_term=" +
         coverage_term_cookie;
+      setCookie("progress", "70%", 1);
     } else if (
       insturance_type_cookie &&
       postal_code_cookie &&
@@ -434,6 +502,7 @@ function GetRedirectUrl(userCookies) {
         insurance_interest_cookie +
         "&personal_income=" +
         personal_income_cookie;
+      setCookie("progress", "65%", 1);
     } else if (
       insturance_type_cookie &&
       postal_code_cookie &&
@@ -470,6 +539,7 @@ function GetRedirectUrl(userCookies) {
         has_insurance_cookie +
         "&insurance_interest=" +
         insurance_interest_cookie;
+      setCookie("progress", "60%", 1);
     } else if (
       insturance_type_cookie &&
       postal_code_cookie &&
@@ -503,6 +573,7 @@ function GetRedirectUrl(userCookies) {
         weight_lbs_cookie +
         "&has_insurance=" +
         has_insurance_cookie;
+      setCookie("progress", "55%", 1);
     } else if (
       insturance_type_cookie &&
       postal_code_cookie &&
@@ -533,6 +604,7 @@ function GetRedirectUrl(userCookies) {
         height_inches_cookie +
         "&weight_lbs=" +
         weight_lbs_cookie;
+      setCookie("progress", "50%", 1);
     } else if (
       insturance_type_cookie &&
       postal_code_cookie &&
@@ -554,6 +626,7 @@ function GetRedirectUrl(userCookies) {
         gender_cookie +
         "&rated_health=" +
         rated_health_cookie;
+      setCookie("progress", "45%", 1);
     } else if (
       insturance_type_cookie &&
       postal_code_cookie &&
@@ -572,6 +645,7 @@ function GetRedirectUrl(userCookies) {
         email_cookie +
         "&gender=" +
         gender_cookie;
+      setCookie("progress", "40%", 1);
     } else if (
       insturance_type_cookie &&
       postal_code_cookie &&
@@ -587,9 +661,32 @@ function GetRedirectUrl(userCookies) {
         date_of_birth_cookie +
         "&email=" +
         email_cookie;
+      setCookie("progress", "35%", 1);
     }
     return urlToRedirect;
   } catch (error) {
     // console.log("GetRedirectUrl " + error);
   }
+}
+
+function readCookie(name) {
+  // Create the cookie name pattern we're looking for (name=)
+  const nameEQ = name + "=";
+  // Split all cookies into an array
+  const cookies = document.cookie.split(';');
+  
+  for(let i = 0; i < cookies.length; i++) {
+      let cookie = cookies[i];
+      // Remove leading spaces
+      while (cookie.charAt(0) === ' ') {
+          cookie = cookie.substring(1);
+      }
+      // If this cookie starts with the name we're looking for
+      if (cookie.indexOf(nameEQ) === 0) {
+          // Return everything after the cookie name
+          return decodeURIComponent(cookie.substring(nameEQ.length));
+      }
+  }
+  // Return null if cookie not found
+  return null;
 }
