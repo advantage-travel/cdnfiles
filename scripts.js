@@ -11,6 +11,9 @@ function storeQueryParamsInCookies(params) {
 // Function to set cookie
 function setCookie(name, value, days) {
   //debugger;
+
+  if (name == "progress") alert("Progress cookie is being set =" + value);
+
   const date = new Date();
   date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
   const expires = "expires=" + date.toUTCString();
