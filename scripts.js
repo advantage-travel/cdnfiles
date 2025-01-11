@@ -679,23 +679,8 @@ function GetRedirectUrl(userCookies) {
 }
 
 function readCookie(name) {
-  // Create the cookie name pattern we're looking for (name=)
-  const nameEQ = name + "=";
-  // Split all cookies into an array
-  const cookies = document.cookie.split(";");
-
-  for (let i = 0; i < cookies.length; i++) {
-    let cookie = cookies[i];
-    // Remove leading spaces
-    while (cookie.charAt(0) === " ") {
-      cookie = cookie.substring(1);
-    }
-    // If this cookie starts with the name we're looking for
-    if (cookie.indexOf(nameEQ) === 0) {
-      // Return everything after the cookie name
-      return decodeURIComponent(cookie.substring(nameEQ.length));
-    }
-  }
-  // Return null if cookie not found
+  const value = `; ${document.cookie}`;
+  const parts = value.split(`; ${name}=`);
+  if (parts.length === 2) return parts.pop().split(";").shift();
   return null;
 }
