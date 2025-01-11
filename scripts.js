@@ -57,7 +57,6 @@ function readUserCookies() {
       "risk_activities",
       "parent_sibling_issues",
       "first_name",
-      "progress",
     ];
 
     const cookies = {};
@@ -110,7 +109,6 @@ function clearInsuranceCookies() {
     "risk_activities",
     "parent_sibling_issues",
     "first_name",
-    "progress",
   ];
 
   cookiesToClear.forEach((cookieName) => {
