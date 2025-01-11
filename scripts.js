@@ -165,6 +165,7 @@ function GetRedirectUrl(userCookies) {
       risk_activities_cookie &&
       parent_sibling_issues_cookie
     ) {
+      setCookie("progress", "95%", 1);
       urlToRedirect =
         "https://consumerdirectlife.com/info1?insturance_type=" +
         insturance_type_cookie +
@@ -204,7 +205,6 @@ function GetRedirectUrl(userCookies) {
         risk_activities_cookie +
         "&parent_sibling_issues=" +
         parent_sibling_issues_cookie;
-      setCookie("progress", "95%", 1);
     } else if (
       insturance_type_cookie &&
       postal_code_cookie &&
@@ -654,6 +654,7 @@ function GetRedirectUrl(userCookies) {
       date_of_birth_cookie &&
       email_cookie
     ) {
+      setCookie("progress", "35%", 1);
       urlToRedirect =
         "https://consumerdirectlife.com/gender?insturance_type=" +
         insturance_type_cookie +
@@ -663,7 +664,13 @@ function GetRedirectUrl(userCookies) {
         date_of_birth_cookie +
         "&email=" +
         email_cookie;
-      setCookie("progress", "35%", 1);
+    } else if (insturance_type_cookie && postal_code_cookie) {
+      setCookie("progress", "20%", 1);
+      urlToRedirect =
+        "https://consumerdirectlife.com/birthday?insturance_type=" +
+        insturance_type_cookie +
+        "&postal_code=" +
+        postal_code_cookie;
     }
     return urlToRedirect;
   } catch (error) {
