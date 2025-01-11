@@ -57,6 +57,7 @@ function readUserCookies() {
       "risk_activities",
       "parent_sibling_issues",
       "first_name",
+      "progress",
     ];
 
     const cookies = {};
@@ -109,6 +110,7 @@ function clearInsuranceCookies() {
     "risk_activities",
     "parent_sibling_issues",
     "first_name",
+    "progress",
   ];
 
   cookiesToClear.forEach((cookieName) => {
@@ -201,7 +203,6 @@ function GetRedirectUrl(userCookies) {
         risk_activities_cookie +
         "&parent_sibling_issues=" +
         parent_sibling_issues_cookie;
-
       setCookie("progress", "95%", 1);
     } else if (
       insturance_type_cookie &&
@@ -673,19 +674,19 @@ function readCookie(name) {
   // Create the cookie name pattern we're looking for (name=)
   const nameEQ = name + "=";
   // Split all cookies into an array
-  const cookies = document.cookie.split(';');
-  
-  for(let i = 0; i < cookies.length; i++) {
-      let cookie = cookies[i];
-      // Remove leading spaces
-      while (cookie.charAt(0) === ' ') {
-          cookie = cookie.substring(1);
-      }
-      // If this cookie starts with the name we're looking for
-      if (cookie.indexOf(nameEQ) === 0) {
-          // Return everything after the cookie name
-          return decodeURIComponent(cookie.substring(nameEQ.length));
-      }
+  const cookies = document.cookie.split(";");
+
+  for (let i = 0; i < cookies.length; i++) {
+    let cookie = cookies[i];
+    // Remove leading spaces
+    while (cookie.charAt(0) === " ") {
+      cookie = cookie.substring(1);
+    }
+    // If this cookie starts with the name we're looking for
+    if (cookie.indexOf(nameEQ) === 0) {
+      // Return everything after the cookie name
+      return decodeURIComponent(cookie.substring(nameEQ.length));
+    }
   }
   // Return null if cookie not found
   return null;
