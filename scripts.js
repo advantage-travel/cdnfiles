@@ -671,7 +671,7 @@ function GetRedirectUrl(userCookies) {
     ) {
       setCookie("progress", "30%", 1);
       urlToRedirect =
-        "https://consumerdirectlife.com/gender?insturance_type=" +
+        "https://consumerdirectlife.com/email?insturance_type=" +
         insturance_type_cookie +
         "&postal_code=" +
         postal_code_cookie +
