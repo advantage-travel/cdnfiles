@@ -664,6 +664,19 @@ function GetRedirectUrl(userCookies) {
         date_of_birth_cookie +
         "&email=" +
         email_cookie;
+    } else if (
+      insturance_type_cookie &&
+      postal_code_cookie &&
+      date_of_birth_cookie
+    ) {
+      setCookie("progress", "30%", 1);
+      urlToRedirect =
+        "https://consumerdirectlife.com/gender?insturance_type=" +
+        insturance_type_cookie +
+        "&postal_code=" +
+        postal_code_cookie +
+        "&date_of_birth=" +
+        date_of_birth_cookie;
     } else if (insturance_type_cookie && postal_code_cookie) {
       setCookie("progress", "20%", 1);
       urlToRedirect =
