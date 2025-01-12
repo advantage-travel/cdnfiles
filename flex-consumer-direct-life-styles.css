@@ -78,6 +78,10 @@ body {
     width: 100%;
   }
 
+  .flex-2-elements-row .item-element input {
+    max-width: 200px;
+  }
+
   /* .flex-2-elements-row {
     width: 530px;
     display: flex;
