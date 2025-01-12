@@ -436,7 +436,7 @@ function GetRedirectUrl(userCookies) {
       coverage_term_cookie
     ) {
       urlToRedirect =
-        "https://consumerdirectlife.com/tobacco_user?insturance_type=" +
+        "https://consumerdirectlife.com/tobacco-user?insturance_type=" +
         insturance_type_cookie +
         "&postal_code=" +
         postal_code_cookie +
