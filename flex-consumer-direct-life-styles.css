@@ -410,6 +410,10 @@ body {
   .center {
     text-align: center;
   }
+
+  .no-border {
+    border: none;
+  }
 }
 
 /*PROGRESS BAR*/
