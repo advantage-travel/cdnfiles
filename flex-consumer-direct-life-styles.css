@@ -517,5 +517,10 @@ body {
     .grid-2-columns {
       grid-template-columns: repeat(1, 1fr);
     }
+
+    .flex-2-elements-row .error {
+      padding: 0px 10px;
+      max-width: 220px;
+    }
   }
 }
