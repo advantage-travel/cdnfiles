@@ -145,8 +145,8 @@ function GetRedirectUrl(userCookies) {
     const good_driver_cookie = userCookies["good_driver"];
     const risk_activities_cookie = userCookies["risk_activities"];
     const parent_sibling_issues_cookie = userCookies["parent_sibling_issues"];
-    const first_name_cookie = userCookies["first_name_issues"];
-    const last_name_cookie = userCookies["last_name_issues"];
+    const first_name_cookie = userCookies["first_name"];
+    const last_name_cookie = userCookies["last_name"];
 
     if (
       insturance_type_cookie &&
