@@ -14,7 +14,7 @@ function PageLoad() {
     // console.log("User Cookies");
     //console.log(userCookies);
   } catch (error) {
-    //console.log("Page Load Error:" + error);
+    console.log("Page Load Error:" + error);
   }
 }
 
