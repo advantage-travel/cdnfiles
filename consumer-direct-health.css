@@ -70,6 +70,14 @@ body {
     max-width: 300px; /* Optional: limits maximum width of each button */
   }
 
+  .flex-2-elements-row .option-btn {
+    min-width: 0;
+    flex-basis: 0;
+    flex-grow: 1;
+    overflow-x: auto;
+    width: 100%;
+  }
+
   /*FOUR ELEMENT PER ROW FLEX*/
 
   .flex-4-elements-row {
@@ -93,7 +101,7 @@ body {
     flex-basis: 0;
     flex-grow: 1;
     overflow-x: auto;
-    width: 100%;
+    width: 80%;
   }
 
   /*BUTTONS STYLE*/
